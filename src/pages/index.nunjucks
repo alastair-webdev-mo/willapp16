@@ -1,0 +1,33 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block header %}
+<div id="hero">
+	<div class="contain">
+		<div class="header-image">
+			<img src="dist/images/wapp-01.png">
+			</div>
+			<div class="header-content">
+			<h2>Welcome to our new and improved online Will app - we think you'll love it!</h2>
+
+			<p>Making your Will should take around 5-10 minutes, though if you prefer to start now and finish up later we’ll create your account now.</p>
+
+			{% include "offer.nunjucks" %}
+
+			<p class="half">If you need any help call the number at the top of the screen, our <b>expert advisors are here Mon-Fri 9am-5pm</b>. But for now…</p>
+
+			<h1>Let's get started</h1>
+			</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+{% include "step1.nunjucks" %}
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.nunjucks" %}
+{% endblock %}

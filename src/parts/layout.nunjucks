@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Damsons - Will App</title>
+
+  <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="shortcut icon" href="http://damsonsfutureplanning.co.uk/wp-content/uploads/2014/04/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" media="screen" />
+
+  <script src="https://use.typekit.net/jek0boe.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+    
+<header>
+
+{% include "topbar.nunjucks" %}
+{% block header %} {% endblock %}
+
+</header>
+
+<main>
+  <div class="contain">
+    {% block content %} {% endblock %}
+  </div>
+</main>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="contain">
+      {% block footer %} {% endblock %}
+    </div>
+  </div>
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="dist/js/classie.js"></script>
+<script src="dist/js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!-- step2.nunjucks -->
+
+<div class="main col-6 left">
+
+	<form class="form form-2" method="" action="./">
+	
+	<div class="will-application">
+		<section>
+
+		<header>
+			<h4>About you</h4>
+		</header>
+
+		<div class="will-app-content">
+			<h2>Step 1: You</h2>
+
+			<p>Making your Will should take around 5-10 minutes, we need to start by building some information about you.</p>
+
+			<div class="will-app-content--contain">
+
+			<h4>Personal Details</h4>
+
+      <span class="input input__span input__damsons select__arrow">
+        <select name="ftitle" id="ftitle" class="input__select" onchange="changeMe(this)">
+				  <option value="default" selected disabled>Title</option>
+				  <option value="1">Mr</option>
+				  <option value="2">Mrs</option>
+				</select>
+      </span>
+			
+      <span class="input input__span input__damsons">
+        <input type="text" id="fname" class="input__field input__field-damsons" name="fname" required>
+        <label class="input__label input__label-damsons" for="app-fname">
+          <span class="input__label-content input__label-content-damsons">First name</small></span>
+        </label>
+      </span>
+
+      <span class="input input__span input__damsons">
+        <input type="text" id="mname" class="input__field input__field-damsons" name="mname">
+        <label class="input__label input__label-damsons" for="app-mname">
+          <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+        </label>
+      </span>
+
+      <span class="input input__span input__damsons">
+        <input type="text" id="sname" class="input__field input__field-damsons" name="sname">
+        <label class="input__label input__label-damsons" for="app-sname">
+          <span class="input__label-content input__label-content-damsons">Surname</small></span>
+        </label>
+      </span>
+
+      <span class="input input__span input__damsons">
+        <input type="date"  placeholder="" class="input__field input__field-damsons" name="fdate">
+        <label class="input__label input__label-damsons" for="app-fdate">
+          <span class="input__label-content input__label-content-damsons">Date of birth (dd-mm-yyyy)</small></span>
+        </label>
+      </span>
+
+      </div>
+
+		</div>
+
+		</section>
+
+	</div>
+
+	</form>
+
+</div>
+
+<div class="side col-3 right">
+	<div class="side-contain">
+	b
+	</div>
+</div>

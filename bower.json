@@ -1,0 +1,17 @@
+{
+  "name": "willapp",
+  "description": "Will App - Development",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alastair Shone <alastair.shone@manchesteroutsourcing.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

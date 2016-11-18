@@ -1,0 +1,13 @@
+{% extends "layout.nunjucks" %}
+
+{% block header %} {% endblock %}
+
+{% block content %}
+
+{% include "step2.nunjucks" %}
+
+{% endblock %}
+
+{% block footer %}
+{% include "footer.nunjucks" %}
+{% endblock %}

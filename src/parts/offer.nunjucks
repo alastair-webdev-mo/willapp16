@@ -1,0 +1,8 @@
+<div id="sticky-note">
+	<div class="sticky-note--content">
+		<p>Refer a friend and get your expert Will review for free!</p>
+		<p class="light">Normally £49.99</p>
+		<p><a href=""><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a> <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a></p>
+		<p><a href="" class="sticky-link-email">Send an email</a></p>
+	</div>
+</div>

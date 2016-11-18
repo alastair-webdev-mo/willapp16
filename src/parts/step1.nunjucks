@@ -1,0 +1,97 @@
+<!-- step1.nunjucks -->
+
+		<div class="side col-3">
+		<img src="dist/images/wapp-side-01.png">
+		</div>
+
+		<div class="main col-6">
+			<h3>There are two types of Will, which one's right for you?</h3>
+
+			<form class="form form-1" method="" action="./">
+				
+				<div id="checkboxes">
+            <section class="box">
+							<h4>Single Will for an unmarried<br> person</h4>
+                <div class="box-content">
+									<img src="dist/images/wapp-icon-01.png">
+									<p>A comprehensive Will, ideal for anyone who is not married or in a civil partnership, even if you have a current partner or children.</p>
+                </div>
+                <div class="select">
+                  <input type="radio" name="c1" class="check-1 checkbox-custom" required id="s_mirror" />
+                  <label for="s_mirror" class="checkbox-label">
+                  <span>I want a Comprehensive Single Will</span>
+                  </label>
+                </div>
+            </section>
+
+            <section class="box">
+							<h4>Mirror Will for married couples or civil partners</h4>
+                <div class="box-content">
+									<img src="dist/images/wapp-icon-02.png">
+									<p>Create two Mirror Wills, ideal for married couples or civil partners, who share identical wishes for their estate.</p>
+                </div>
+                <div class="select">
+                  <input type="radio" name="c1" class="check-1 checkbox-custom" required id="w_mirror" />
+                  <label for="w_mirror" class="checkbox-label">
+                  <span>I want a Mirror Will</span>
+                  </label>
+                </div>
+            </section>
+
+            <section class="box">
+              <h4>Please confirm that you:</h4>
+                <div class="box-content">
+                  <ul>
+                    <li>are of sound mind</li>
+                    <li>are aged 18 years or over</li>
+                    <li>understand that by completing and executing this Will you are revoking all previous wills</li>
+                  </ul>
+                </div>
+                <div class="select">
+                  <input type="checkbox" name="c2" class="check-2 checkbox-custom" required />
+                  <label for="c2" class="checkbox-label">
+                  <span>Yes I confirm</span>
+                  </label>
+                </div>
+            </section>
+
+            <section class="box info">
+              <div class="box-info">
+                <div class="box-info-content">
+                  <img src="dist/images/wapp-icon-03.png">
+                  <p>Non-UK assets are beyond the scope of our free Will App.</p>
+                  <p>Please call on <strong>0800 088 4670</strong> to discuss options.</p>
+                </div>
+              </div>
+            </section>
+				</div>
+
+      <h3>Great! Now create an account, so you can log in again.</h3>
+
+        <div id="login">
+          <div class="login-hz">
+            
+            <span class="input input__span">
+              <label class="input__label input__label-register" for="register-1">
+                <span class="input__label-content input__label-content-register">Email</span>
+              </label>
+              <input type="email" id="register-1" class="input__field input__field-register" placeholder="Your email address" name="email" required>
+            </span>
+
+            <span class="input input__span">
+              <label class="input__label input__label-register" for="register-2">
+                <span class="input__label-content input__label-content-register">Create Password <small>(Include 1 capital letter and 1 number)</small></span>
+              </label>
+              <input type="password" id="register-2" class="input__field input__field-register" name="password" placeholder="Choose a password, keep it safe" required>
+            </span>
+
+          </div>
+        </div>
+
+        <div id="make-will">
+          <input type="submit" value="Make My Will" />
+        </div>
+
+      </form>
+
+		</div>

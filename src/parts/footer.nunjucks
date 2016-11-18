@@ -1,0 +1,10 @@
+<div class="footer-content">
+	<div class="footer-left">
+		<p>&copy; 2016 Damsons Future Planning | <a href="">Privacy Policy</a> | <a href="">Terms and Conditions</a> | <a href="">Contact Us</a></p>
+		<p class="last">Damsons Future Planning is registered in England and Wales with company registration number 07403561.<br>Its registered office is at Adamson House, Pomona Strand, Old Trafford M16 0TT ICO Reg. No. Z3173156 VAT Reg. No. 156668569</p>
+		{% include "offer.nunjucks" %}
+	</div>
+	<div class="footer-right">
+		<img src="../dist/images/logo-white@2x.png" width="185" height="35">
+	</div>
+</div>
