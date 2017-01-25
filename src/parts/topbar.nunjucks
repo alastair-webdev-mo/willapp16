@@ -1,9 +1,11 @@
-<div id="topbar">
-		<div class="contain">
+<div id="top">
+	<div class="top-contain">
+
+		<div class="top-wrapper">
 			<div class="top logo"></div>
 			<div class="top contact">
-				<span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
-				<span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
+				<i class="fa fa-lg fa-phone" aria-hidden="true"></i> <span class="number">0800 088 4670</span><br><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a>
 			</div>
 		</div>
+	</div>
 </div>

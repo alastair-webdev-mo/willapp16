@@ -6,12 +6,15 @@
     "Alastair Shone <alastair.shone@manchesteroutsourcing.co.uk>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/manchesteroutsourcing/willapp16",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "parsleyjs": "^2.6.0"
+  }
 }

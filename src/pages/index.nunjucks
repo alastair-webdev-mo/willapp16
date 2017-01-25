@@ -27,7 +27,3 @@
 {% include "step1.nunjucks" %}
 
 {% endblock %}
-
-{% block footer %}
-{% include "footer.nunjucks" %}
-{% endblock %}

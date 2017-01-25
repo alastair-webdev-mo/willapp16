@@ -1,3 +1,6 @@
+<?php 
+$fc = $_GET['fc'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,34 +9,11 @@
 <title>Damsons - Will App</title>
 
 <link rel="stylesheet" href="dist/css/styles.css">
-<link rel="shortcut icon" href="//damsonsfutureplanning.co.uk/wp-content/uploads/2014/04/favicon.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="http://damsonsfutureplanning.co.uk/wp-content/uploads/2014/04/favicon.jpg" type="image/x-icon" />
 
 <script src="https://use.typekit.net/ync1xsk.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <script src="https://use.fontawesome.com/3cf330e970.js"></script>
-
-<link href="http://services.postcodeanywhere.co.uk/css/address-3.40.min.css" rel="stylesheet" type="text/css" />
-<script src="http://services.postcodeanywhere.co.uk/js/address-3.40.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-function ResetForms() {
-            document.getElementById("txtAddressSearchSeparateField").value = "";
-            document.getElementById("txtCompanySeparateField").value = "";
-            document.getElementById("txtLine1SeparateField").value = "";
-            document.getElementById("txtLine2SeparateField").value = "";
-            document.getElementById("txtTownSeparateField").value = "";
-            document.getElementById("txtPostcodeSeparateField").value = "";
-            document.getElementById('lblLookupSeparateField').style.display = 'block';
-            document.getElementById("txtCompanyBoundFields").value = "";
-            document.getElementById("txtLine1BoundFields").value = "";
-            document.getElementById("txtLine2BoundFields").value = "";
-            document.getElementById("txtTownBoundFields").value = "";
-            document.getElementById("txtPostcodeBoundFields").value = "";
-            document.getElementById("txtAddressSearchSingleField").value = "";
-            document.getElementById('lblLookupSingleField').style.display = 'block';
-            document.getElementById("AddressAreaSingleField").value = "";
-        }
-
-</script>
 
 <script
   src="http://code.jquery.com/jquery-3.1.1.min.js"
@@ -46,11 +26,13 @@ function ResetForms() {
 
 <div id="topbar">
     <div class="contain">
-      <div class="top logo"></div>
-      <div class="top contact">
-        <span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
-        <span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
-      </div>
+       
+<div class="top logo"></div>
+<div class="top contact">
+	<span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
+	<span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
+</div>
+
     </div>
 </div>
 
@@ -103,12 +85,8 @@ function ResetForms() {
             <section class="box will-select">
 							<h4>Single Will for an unmarried<br> person</h4>
                 <div class="box-content">
-                  <div class="box-content--image">
-									 <img src="dist/images/wapp-icon-01.png">
-                  </div>
-                  <div class="box-content--text">
-									 <p>A comprehensive Will, ideal for anyone who is not married or in a civil partnership, even if you have a current partner or children.</p>
-                  </div>
+									<img src="dist/images/wapp-icon-01.png">
+									<p>A comprehensive Will, ideal for anyone who is not married or in a civil partnership, even if you have a current partner or children.</p>
                 </div>
                 <div class="select">
                   <input type="radio" name="c1" class="check-1 checkbox-custom" value="s_mirror" required id="s_mirror" />
@@ -121,12 +99,8 @@ function ResetForms() {
             <section class="box will-select">
 							<h4>Mirror Will for married couples or civil partners</h4>
                 <div class="box-content">
-                  <div class="box-content--image">
-									 <img src="dist/images/wapp-icon-02.png">
-                  </div>
-                  <div class="box-content--text">
-									 <p>Create two Mirror Wills, ideal for married couples or civil partners, who share identical wishes for their estate.</p>
-                  </div>
+									<img src="dist/images/wapp-icon-02.png">
+									<p>Create two Mirror Wills, ideal for married couples or civil partners, who share identical wishes for their estate.</p>
                 </div>
                 <div class="select">
                   <input type="radio" name="c1" class="check-1 checkbox-custom" value="w_mirror" id="w_mirror" />
@@ -194,7 +168,7 @@ function ResetForms() {
             </label>
             <span class="input__span">
               <input type="email" id="register-1" class="input__ignore input__field input__field-register" placeholder="Your email address" name="email" required>
-              <input type="hidden" id="emailnotvalidated" value="0">
+              <input type="hidden" id="emailnotvalidated" value="1">
             </span>
             </span>
             
@@ -222,32 +196,36 @@ function ResetForms() {
   </div>
 </main>
 
+
 <footer>
     <div class="contain">
 
     <div class="footer-content">
-    <div class="f-bottom">
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> Damsons Future Planning Limited | <a href="//damsonsfutureplanning.co.uk/DFP_WW_Terms_Conditions.pdf" target="_blank">Terms and Conditions</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Privacy_2016.pdf" target="_blank">Privacy Policy</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Complaint_Handling_Procedure.pdf" target="_blank">Feedback</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Cookie_Policy.pdf" target="_blank">Cookies</a> | <a href="//damsonsfutureplanning.co.uk/contact/" target="_blank">Contact Us</a></p>
-      <p><small>Damsons Future Planning Limited is registered in England and Wales with company registration number 07403561.<br>Its registered office is at Adamson House, Pomona Strand, Old Trafford M16 0TT ICO Reg. No. Z3173156 VAT Reg. No. 156668569</small></p>
-    </div>
-    <div class="footer-right">
-      <img src="//damsonsfutureplanning.co.uk/wp-content/uploads/2016/12/d-logo_white@2x.png" width="185">
-      <div class="footer-bottom contact">
-        <span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
-        <span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
-      </div>
-    </div>
-  </div>
+		<div class="f-bottom">
+			<p>&copy; <script>document.write(new Date().getFullYear())</script> Damsons Future Planning Limited | <a href="http://damsonsfutureplanning.co.uk/DFP_Privacy_2016.pdf" target="_blank">Privacy Policy</a> | <a href="http://damsonsfutureplanning.co.uk/DFP_Complaint_Handling_Procedure.pdf" target="_blank">Feedback</a> | <a href="http://damsonsfutureplanning.co.uk/DFP_Cookie_Policy.pdf" target="_blank">Cookies</a> | <a href="http://damsonsfutureplanning.co.uk/contact/" target="_blank">Contact Us</a></p>
+			<p><small>Damsons Future Planning Limited is registered in England and Wales with company registration number 07403561.<br>Its registered office is at Adamson House, Pomona Strand, Old Trafford M16 0TT ICO Reg. No. Z3173156 VAT Reg. No. 156668569</small></p>
+		</div>
+		<div class="footer-right">
+			<img src="http://damsonsfutureplanning.co.uk/plan-your-funeral/template/img/d-logo_white.png">
+			<div class="footer-bottom contact">
+				<span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
+				<span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
+			</div>
+		</div>
+	</div>
 
-  </div>
+	</div>
 </footer>
 
-<script src="dist/js/jquery.validate.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 <script
   src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
-<script src="dist/js/main.min.js"></script>
+<script src="dist/js/classie.js"></script>
+<script src="dist/js/main.js"></script>
+
 
 </body>
 </html>

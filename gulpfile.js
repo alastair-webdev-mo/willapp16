@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var concatCss = require('gulp-concat-css');
+var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
@@ -25,12 +26,14 @@ function customPlumber(errTitle) {
 
 gulp.task('js', function(cb) {
 	pump([ 
-		gulp.src('src/js/*.js'),
+        gulp.src([
+            'src/js/classie.js',
+            'src/js/jquery.inputmask.js',
+            'src/js/app.js'
+        ]),
 		customPlumber('JSHint Error'),
-		jshint(),
-		jshint.reporter('default'),
-		jshint.reporter('fail'),
 		uglify(),
+		concat('main.min.js'),
 		gulp.dest('dist/js'),
 		browserSync.stream(),
 	],
@@ -64,7 +67,8 @@ gulp.task('nunjucks', function() {
 
 gulp.task('serve', function() {
     browserSync.init({
-        server: "./"
+        server: "./",
+        ghostMode: false
     });
 });
 

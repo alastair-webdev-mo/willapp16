@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Damsons - Will App</title>
+
+<link rel="stylesheet" href="dist/css/styles.css">
+<link rel="shortcut icon" href="//damsonsfutureplanning.co.uk/wp-content/uploads/2014/04/favicon.jpg" type="image/x-icon" />
+
+<script src="https://use.typekit.net/ync1xsk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="https://use.fontawesome.com/3cf330e970.js"></script>
+
+<link href="https://services.postcodeanywhere.co.uk/css/address-3.40.min.css" rel="stylesheet" type="text/css" />
+<script src="https://services.postcodeanywhere.co.uk/js/address-3.40.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function ResetForms() {
+            document.getElementById("txtAddressSearchSeparateField").value = "";
+            document.getElementById("txtCompanySeparateField").value = "";
+            document.getElementById("txtLine1SeparateField").value = "";
+            document.getElementById("txtLine2SeparateField").value = "";
+            document.getElementById("txtTownSeparateField").value = "";
+            document.getElementById("txtPostcodeSeparateField").value = "";
+            document.getElementById('lblLookupSeparateField').style.display = 'block';
+            document.getElementById("txtCompanyBoundFields").value = "";
+            document.getElementById("txtLine1BoundFields").value = "";
+            document.getElementById("txtLine2BoundFields").value = "";
+            document.getElementById("txtTownBoundFields").value = "";
+            document.getElementById("txtPostcodeBoundFields").value = "";
+            document.getElementById("txtAddressSearchSingleField").value = "";
+            document.getElementById('lblLookupSingleField').style.display = 'block';
+            document.getElementById("AddressAreaSingleField").value = "";
+        }
+
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<header>
+
+<div id="topbar">
+    <div class="contain">
+      <div class="top logo"></div>
+      <div class="top contact">
+        <span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
+        <span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
+      </div>
+    </div>
+</div>
+
+ 
+
+</header>
+
+<main>
+  <div class="contain">
+    
+
+<!-- start-will.nunjucks -->
+
+<div class="main col-6 left">
+	<div class="will-application">
+		<section>
+			<header class="header header-active">
+	  			<h4>About you</h4>
+	  		</header>
+
+	  		<div class="will-app-content will-app-active">
+	  			<div class="will-app-wrap">
+
+					<h2>Step 1: You</h2>
+  					<p>Making your Will should take around 5-10 minutes, we need to start by building some information about you.</p>
+
+  					<div id="willapp">
+  						<div class="willapp-content active">
+							<div class="will-app-wrapper active" data-form="form-1">
+								<form class="form form-1" method="" action="./">
+									<div class="will-app--title">
+						              <h4>Personal Details</h4>
+						            </div>
+									
+									<span class="input input__span input__damsons select__arrow">
+						                <select name="y_title" id="y_title" class="input__select" onchange="changeMe(this)">
+							        		<option value="default" selected disabled>Title</option>
+							        		<option value="Dr">Dr</option>
+							        		<option value="Mr">Mr</option>
+							                <option value="Mrs">Mrs</option>
+							                <option value="Miss">Miss</option>
+							                <option value="Ms">Ms</option>
+							                <option value="Professor">Professor</option>
+						        		</select>
+						            </span>
+
+						            <span class="input input__span input__damsons">
+						                <input type="text" id="y_firstname" class="input__field input__field-damsons" name="y_firstname" required>
+						                <label class="input__label input__label-damsons" for="y_firstname">
+						                  <span class="input__label-content input__label-content-damsons">First name</small></span>
+						                </label>
+						            </span>
+
+						            <span class="input input__span input__damsons">
+						                <input type="text" id="y_middlename" class="input__field input__field-damsons" name="y_middlename">
+						                <label class="input__label input__label-damsons" for="y_middlename">
+						                  <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+						                </label>
+						            </span>
+
+						            <span class="input input__span input__damsons">
+						                <input type="text" id="y_surname" class="input__field input__field-damsons" name="y_surname">
+						                <label class="input__label input__label-damsons" for="y_surname">
+						                  <span class="input__label-content input__label-content-damsons">Surname</small></span>
+						                </label>
+						            </span>
+
+						            <span class="input input__span input__damsons">
+						                <input id="y_birthdate" data-inputmask="'alias': 'date'" class="input__field input__field-damsons y_birthdate" name="y_birthdate">
+						                <label class="input__label input__label-damsons" for="y_birthdate">
+						                  <span class="input__label-content input__label-content-damsons">Date of birth (dd-mm-yyyy)</small></span>
+						                </label>
+						            </span>
+
+						            <div class="col-2 checkbox-2">
+						              <span class="input input__span input__damsons input__gen">
+						                <input type="radio" name="c2" class="check-1 checkbox-custom" value="male" id="y_male" />
+						                <label class="checkbox-label" for="y_male">
+						                  <span class="input__gen-span"><img src="dist/images/wapp-icon-01.png" width="20">Male</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__gen">
+						                <input type="radio" name="c2" class="check-1 checkbox-custom" value="female" id="y_female" />
+						                <label class="checkbox-label" for="y_female">
+						                  <span class="input__gen-span"><img src="dist/images/wapp-icon-01.png" width="20">Female</span>
+						                </label>
+						              </span>
+						            </div>
+
+						            <span class="input input__span input__damsons select__arrow">
+						                <select name="y_marital" id="y_marital" class="input__select" onchange="changeMe(this)">
+						                  <option value="default" selected disabled>Marital status</option>
+						                  <option value="Single">Single</option>
+						                  <option value="Married">Married</option>
+						                  <option value="Civil Partnership">Civil Partnership</option>
+						                  <option value="Living With Partner">Living with Partner</option>
+						                  <option value="Widow">Widow</option>
+						                  <option value="Widower">Widower</option>
+						                  <option value="Divorced">Divorced</option>
+						                  <option value="Seperated">Seperated</option>
+						                </select>
+						            </span>
+
+								</form>
+								<div id="buttons" class="b-one">
+					            	<input id="next" class="next" type="submit" value="Next" data-name="form-1">
+					            </div>
+							</div>
+							<div class="will-app-wrapper" data-form="form-2">
+								<form class="form form-2" method="" action="./">
+									<div class="will-app--title">
+						              <h4>Contact Details</h4>
+						            </div>
+
+						            <span class="input input__span input__damsons">
+						                <input type="email" id="c_email" class="input__field input__field-damsons" name="email">
+						                <input type="hidden" id="emailnotvalidated" value="0">
+						                <label class="input__label input__label-damsons" for="email">
+						                  <span class="input__label-content input__label-content-damsons">Email Address</small></span>
+						                </label>
+						            </span>
+
+						            <span class="input input__span input__damsons">
+						                <input type="phone" id="c_tel" class="input__field input__field-damsons" name="tel1">
+						                <input type="hidden" id="phonenotvalidated" class="input-phone-notvalidated" value="1">
+						                <label class="input__label input__label-damsons" for="tel1">
+						                  <span class="input__label-content input__label-content-damsons">Preferred phone number</small></span>
+						                </label>
+						                <label id="phone-error" class="phone-error" for="tel1"></label>
+						                <div id="loader" style="display: none;"><img src="dist/images/loading.gif"></div>
+						            </span>
+
+
+						            <span class="input input__span input__damsons">
+						                <input type="phone" id="c_tel2" class="input__field input__field-damsons" name="tel2">
+						                <input type="hidden" id="phonenotvalidated" class="input-phone-notvalidated" value="1">
+						                <label class="input__label input__label-damsons" for="tel2">
+						                  <span class="input__label-content input__label-content-damsons">Secondary phone number (optional)</small></span>
+						                </label>
+						                <label id="phone-error" class="phone-error" for="tel2"></label>
+						            </span>
+								</form>
+								<div id="buttons" class="b-two">
+					                <input id="back" class="back" type="submit" value="Back">
+					            	<input id="next" class="next" type="submit" value="Next" data-name="form-2">
+					            </div>
+							</div>
+							<div class="will-app-wrapper" data-form="form-3">
+								<form class="form form-3" method="" action="./">
+									<div class="input__header">
+						              <h5>Search for your address:</h5>
+						              <p>Type your postcode or 1st line of address into the boxed field below.</p>
+						            </div>
+
+						            <span class="input input__span input__damsons">
+						                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+						                <label class="input__label input__label-damsons" for="app-search">
+						                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+						                </label>
+						            </span>
+
+						            <div class="input__header">
+						              <h5>Address search results</h5>
+						            </div>
+
+						            <span class="input input__span input__damsons input--filled">
+						                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons" name="c_address">
+						                <label class="input__label input__label-damsons" for="c_address">
+						                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input--filled">
+						                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons" name="c_city">
+						                <label class="input__label input__label-damsons" for="c_city">
+						                  <span class="input__label-content input__label-content-damsons">City</small></span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input--filled">
+						                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons" name="c_county">
+						                <label class="input__label input__label-damsons" for="c_county">
+						                  <span class="input__label-content input__label-content-damsons">County</small></span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input--filled">
+						                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons" name="c_postcode">
+						                <label class="input__label input__label-damsons" for="c_postcode">
+						                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons select__arrow">
+						                <select name="c_resstatus" id="c_resstatus" class="input__select" onchange="changeMe(this)">
+						                  <option value="default" selected disabled>What is your residential status?</option>
+						                  <option value="1">Homeowner (outright)</option>
+						                  <option value="2">Homeowner (with mortgage/loan)</option>
+						                  <option value="3">Rented (private)</option>
+						                  <option value="4">Rented (social/local authority)</option>
+						                  <option value="5">Living with parents</option>
+						                  <option value="6">Other</option>
+						                </select>
+						              </span>
+								</form>
+								<div id="buttons" class="b-two">
+					                <input id="back" class="back" type="submit" value="Back">
+					            	<input id="continue" class="continue" type="submit" value="Continue" data-name="form-3">
+					            </div>
+							</div>
+						</div>
+  					</div>
+
+				</div>
+	  		</div>
+
+		</section>
+		<section>
+			<header class="header">
+	  			<h4>Guardians</h4>
+	  		</header>
+
+	  		<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-1"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-1">
+			            <p>If you do not have any children under the age of 18 or any dependants, just select No and continue.</p>
+			            <p>If you do have children under 18 or dependants, here you can write into your Will who you would like to be their legal guardians. This is done in a 2 step process.</p>
+			                        
+			            <h3>Step 1 - Adding a Dependant</h3>
+			            <p>Fill in all the requested fields and click the "Add Dependant" button. Your dependant will then be added and appear in the table at the top of the page, along with 2 new buttons - Add a Dependant and Add a Guardian</p>
+			            <p>You can add more dependants by clicking the "Add a Dependant" button</p>
+			                        
+			            <h3>Step 2 - Adding a Guardian</h3>
+			            <p>Clicking on the "Add a Guardian" button opens a new form.  In the first field within this form, choose your selected dependant from the drop down list, then choose a guardian from the second drop down list. Initially the only option in the Choose Guardian field will be <b>Add New Person</b>. Select this option and complete the resultant form.  This person is then available within all your people drop down fields going forward.</p>
+			            <p>The final stage is choosing whether this guardian is a Primary Guardian or a Substitute Guardian.</p>
+			            <p>You can have multiple Primary guardians for each dependant, and these chosen people will have first option to become legal guardians if needed.  Substitute guardians will only be contacted if the Primary guardians are unwilling or unable.</p>  
+
+			            <p class="close-link"><a class="popup-close" data-close="find-1" href="#">Close</a></p>            
+			        </div>
+
+					<h2>Step 2: Guardians</h2>
+
+					<div class="guardians-section hidden">
+			          <div id="dependants">
+			              <div class="dependants_header">
+			              <h4>Dependant Name</h4>
+			              <h4>Guardian Name</h4>
+			              </div>
+			              <ul id="dependant_list">
+			                <li class="dependant_list_item guardian_added">
+			                  <div class="dependant_name">
+			                  <span>
+			                    <div class="name">Example Dependant Name</div>
+			                    <div class="relation">Son</div>
+			                  </span>
+			                  <a class="clear-dependant">Clear</a>
+			                  </div>
+			                  <div class="guardians_list">
+			                  <div class="guardian_name">
+			                  <span>
+			                    <div class="name">Example Guardian Name</div>
+			                    <div class="relation">Primary Guardian</div>
+			                  </span>
+			                  <a class="clear-guardian">Clear</a>
+			                  </div>
+			                  <div class="guardian_name">
+			                  <span>
+			                    <div class="name">Example Guardian Name</div>
+			                    <div class="relation">Substitute Guardian</div>
+			                  </span>
+			                  <a class="clear-guardian">Clear</a>
+			                  </div>
+			                  </div>
+			                </li>
+			                <li class="dependant_list_item">
+			                  <span>Example Dependant Name 2</span>
+			                  <a class="clear-dependant">Clear</a>
+			                </li>
+			              </ul>
+			              <div class="dependants_footer">
+			              <h4 class="add add_dep_drop" data-name="step-2-2">+ add another dependant</h4>
+			              <h4 class="add add_gua_drop">+ add another guardian</h4>
+			              </div>
+			          </div>
+			        </div>
+
+  					<div id="willapp">
+  						<div class="willapp-content">
+							<div class="will-app-wrapper active" data-tab="step-2-1">
+								<form class="form form-4" method="" action="./">
+									<div class="will-app--title">
+						              <h4>Do you have any children (or dependants) under the age of 18?</h4>
+						            </div>
+
+						            <div class="col-2 checkbox-2">
+						              <span class="input input__span input__damsons input__gen">
+						                <input type="radio" name="c3" class="check-1 checkbox-custom checkbox-full" value="yes" id="g_yes" />
+						                <label class="checkbox-label" for="g_yes">
+						                  <span class="input__gen-span"><img src="dist/images/wapp-icon-01.png" width="20">Yes</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__gen">
+						                <input type="radio" name="c3" class="check-1 checkbox-custom checkbox-full" value="no" id="g_no" />
+						                <label class="checkbox-label" for="g_no">
+						                  <span class="input__gen-span"><img src="dist/images/wapp-icon-01.png" width="20">No</span>
+						                </label>
+						              </span>
+						            </div>
+								</form>
+								<div id="buttons" class="b-two opt">
+					                <input id="next" class="next hidden" type="submit" value="Next">
+					            	<input id="continue" class="continue hidden" type="submit" value="Continue" data-name="form-4">
+					            </div>
+							</div>
+							<div class="will-app-wrapper" data-tab="step-2-2">
+								<div id="multiple_form">
+									<div id="multiple_dep" class="dependant">
+										<form id="add_dep" class="form form-5" method="" action="./">
+											<div class="will-app--title dep-first-step">
+								                <h4>Firstly add your children/dependants</h4>
+								            </div>
+								            <div class="will-app--subtitle">
+								                <h5>Add dependant <span class="dependant_number"></span></h5>
+								                <img src="dist/images/wapp-icon-01.png" width="20">
+								            </div>
+
+								            <span class="input input__span input__damsons">
+							                  <input type="text" id="y_firstname" class="input__field input__field-damsons" name="y_firstname">
+							                  <label class="input__label input__label-damsons" for="y_firstname">
+							                    <span class="input__label-content input__label-content-damsons">First name</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="y_middlename" class="input__field input__field-damsons" name="y_middlename">
+							                  <label class="input__label input__label-damsons" for="d_middlename">
+							                    <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="y_surname" class="input__field input__field-damsons" name="y_surname">
+							                  <label class="input__label input__label-damsons" for="y_surname">
+							                    <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input id="y_birthdate" data-inputmask="'alias': 'date'" class="input__field input__field-damsons y_birthdate" name="y_birthdate">
+							                  <label class="input__label input__label-damsons" for="y_birthdate">
+							                    <span class="input__label-content input__label-content-damsons">Date of birth (dd-mm-yyyy)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons select__arrow">
+							                  <select name="y_resstatus" id="y_resstatus" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Relationship to you</option>
+							                    <option value="son">Son</option>
+							                    <option value="step son">Step Son</option>
+							                    <option value="son in law">Son in Law</option>
+							                    <option value="daughter">Daughter</option>
+							                    <option value="step daughter">Step Daughter</option>
+							                    <option value="daughter in law">Daughter in Law</option>
+							                    <option value="brother">Brother</option>
+							                    <option value="step brother">Step Brother</option>
+							                    <option value="brother in law">Brother in Law</option>
+							                    <option value="sister">Sister</option>
+							                    <option value="step sister">Step Sister</option>
+							                    <option value="sister in law">Sister in Law</option>
+							                    <option value="granddaughter">Granddaughter</option>
+							                    <option value="grandson">Grandson</option>
+							                    <option value="niece">Niece</option>
+							                    <option value="nephew">Nephew</option>
+							                    <option value="cousin">Cousin</option>
+							                    <option value="friend">Friend</option>
+							                  </select>
+							                </span>
+											<div id="add">
+							                  <input id="add_person" class="add_person" type="submit" value="Add Dependant">
+							                </div>
+										</form>
+									</div>
+						            <div class="form-link hidden">
+						            	<button class="clone">+ Add another dependant</button>
+						            </div>
+						            <div id="buttons" class="b-two b-dep">
+							            <input id="back" class="back" type="submit" value="Back">
+							            <input id="finish" class="finish-dep hidden" type="submit" value="Finish adding dependants" data-name="form-5">
+							        </div>
+							        <div id="multiple_gua" class="guardian hidden">
+							           	<form id="add_gua" class="form form-6" method="" action="./">
+							                <div class="will-app--title dep-second-step">
+							                  <h4>Now, add the Guardians you nominate to care for your dependants.</h4>
+							                </div>
+
+							                <div class="will-app--subtitle">
+							                  <h5>Add guardian</h5>
+							                  <img src="dist/images/wapp-icon-01.png" width="20">
+							                </div>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_firstname" class="input__field input__field-damsons" name="g_firstname" required>
+							                  <label class="input__label input__label-damsons" for="g_firstname">
+							                    <span class="input__label-content input__label-content-damsons">First name</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_middlename" class="input__field input__field-damsons" name="g_middlename">
+							                  <label class="input__label input__label-damsons" for="g_middlename">
+							                    <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_surname" class="input__field input__field-damsons" name="g_surname">
+							                  <label class="input__label input__label-damsons" for="g_lastname">
+							                    <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_status" id="g_status" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Relationship to ...</option>
+							                    <option value="son">Son</option>
+							                    <option value="step son">Step Son</option>
+							                    <option value="son in law">Son in Law</option>
+							                    <option value="daughter">Daughter</option>
+							                    <option value="step daughter">Step Daughter</option>
+							                    <option value="daughter in law">Daughter in Law</option>
+							                    <option value="brother">Brother</option>
+							                    <option value="step brother">Step Brother</option>
+							                    <option value="brother in law">Brother in Law</option>
+							                    <option value="sister">Sister</option>
+							                    <option value="step sister">Step Sister</option>
+							                    <option value="sister in law">Sister in Law</option>
+							                    <option value="granddaughter">Granddaughter</option>
+							                    <option value="grandson">Grandson</option>
+							                    <option value="niece">Niece</option>
+							                    <option value="nephew">Nephew</option>
+							                    <option value="cousin">Cousin</option>
+							                    <option value="friend">Friend</option>
+							                  </select>
+							                </span>
+							            </form>
+							        </div>
+							        <div id="buttons" class="b-gua hidden">
+						            	<input id="next" class="add_person_guardian" type="submit" value="Next" data-name="form-6">
+					            	</div>
+					            	<div id="nomination" class="nominate hidden">
+							           	<form class="form form-7" method="" action="./">
+											<div class="will-app--title nom-text">
+								              <h4>You nominate</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_name" id="g_name" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Guardian Name</option>
+							                    	<option value="name-1">Add</option>
+							                    	<option value="name-1">Name</option>
+							                  </select>
+							                </span>
+
+							                <div class="will-app--title nom-text">
+								              <h4>to be the</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_type" id="g_type" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Please select</option>
+							                    <option value="Primary">Primary Guardian</option>
+							                  </select>
+							                </span>
+
+							                <div class="will-app--title nom-text">
+								              <h4>of</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_name2" id="g_name2" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Example dependant</option>
+							                    	<option value="name-1">Dependant One</option>
+							                  </select>
+							                </span>
+										</form>
+										<div class="form-link hidden">
+							                <button class="back-guardian">+ Add another guardian</button>
+							            </div>
+							        </div>
+							        <div id="buttons" class="b-nom hidden">
+						            	<input id="next" class="finish_adding_gua" type="submit" value="Next" data-name="form-7">
+					            	</div>
+					            </div>
+							</div>
+							<div class="will-app-wrapper" data-tab="step-2-3">
+									<div class="will-app--title nom-text">
+						              <h4>Great! You have assigned guardians to all your dependants.</h4>
+						            </div>
+								<div id="buttons">
+					            	<input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-7">
+					            </div>
+							</div>
+						</div>
+							<div id="add_more" class="hidden">
+								<div id="multiple_form">
+									<div id="multiple_dep" class="dependant">
+										<form id="add_dep" class="form form-5" method="" action="./">
+											<div class="will-app--title dep-first-step">
+								                <h4>Add another child/dependant</h4>
+								            </div>
+								            <div class="will-app--subtitle">
+								                <h5>Add dependant <span class="dependant_number"></span></h5>
+								                <img src="dist/images/wapp-icon-01.png" width="20">
+								            </div>
+
+								            <span class="input input__span input__damsons">
+							                  <input type="text" id="y_firstname" class="input__field input__field-damsons" name="y_firstname">
+							                  <label class="input__label input__label-damsons" for="y_firstname">
+							                    <span class="input__label-content input__label-content-damsons">First name</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="y_middlename" class="input__field input__field-damsons" name="y_middlename">
+							                  <label class="input__label input__label-damsons" for="d_middlename">
+							                    <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="y_surname" class="input__field input__field-damsons" name="y_surname">
+							                  <label class="input__label input__label-damsons" for="y_surname">
+							                    <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input id="y_birthdate" data-inputmask="'alias': 'date'" class="input__field input__field-damsons y_birthdate" name="y_birthdate">
+							                  <label class="input__label input__label-damsons" for="y_birthdate">
+							                    <span class="input__label-content input__label-content-damsons">Date of birth (dd-mm-yyyy)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons select__arrow">
+							                  <select name="y_resstatus" id="y_resstatus" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Relationship to you</option>
+							                    <option value="son">Son</option>
+							                    <option value="step son">Step Son</option>
+							                    <option value="son in law">Son in Law</option>
+							                    <option value="daughter">Daughter</option>
+							                    <option value="step daughter">Step Daughter</option>
+							                    <option value="daughter in law">Daughter in Law</option>
+							                    <option value="brother">Brother</option>
+							                    <option value="step brother">Step Brother</option>
+							                    <option value="brother in law">Brother in Law</option>
+							                    <option value="sister">Sister</option>
+							                    <option value="step sister">Step Sister</option>
+							                    <option value="sister in law">Sister in Law</option>
+							                    <option value="granddaughter">Granddaughter</option>
+							                    <option value="grandson">Grandson</option>
+							                    <option value="niece">Niece</option>
+							                    <option value="nephew">Nephew</option>
+							                    <option value="cousin">Cousin</option>
+							                    <option value="friend">Friend</option>
+							                  </select>
+							                </span>
+											<div id="add">
+							                  <input id="add_another_person" class="add_another_person" type="submit" value="Add Dependant">
+							                </div>
+										</form>
+									</div>
+							        <div id="multiple_gua" class="guardian hidden">
+							           	<form id="add_gua" class="form form-6" method="" action="./">
+							                <div class="will-app--title dep-second-step">
+							                  <h4>Add a new guardian for your dependant</h4>
+							                </div>
+
+							                <div class="will-app--subtitle">
+							                  <h5>Add guardian</h5>
+							                  <img src="dist/images/wapp-icon-01.png" width="20">
+							                </div>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_firstname" class="input__field input__field-damsons" name="g_firstname" required>
+							                  <label class="input__label input__label-damsons" for="g_firstname">
+							                    <span class="input__label-content input__label-content-damsons">First name</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_middlename" class="input__field input__field-damsons" name="g_middlename">
+							                  <label class="input__label input__label-damsons" for="g_middlename">
+							                    <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons">
+							                  <input type="text" id="g_surname" class="input__field input__field-damsons" name="g_surname">
+							                  <label class="input__label input__label-damsons" for="g_lastname">
+							                    <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							                  </label>
+							                </span>
+
+							                <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_status" id="g_status" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Relationship to ...</option>
+							                    <option value="son">Son</option>
+							                    <option value="step son">Step Son</option>
+							                    <option value="son in law">Son in Law</option>
+							                    <option value="daughter">Daughter</option>
+							                    <option value="step daughter">Step Daughter</option>
+							                    <option value="daughter in law">Daughter in Law</option>
+							                    <option value="brother">Brother</option>
+							                    <option value="step brother">Step Brother</option>
+							                    <option value="brother in law">Brother in Law</option>
+							                    <option value="sister">Sister</option>
+							                    <option value="step sister">Step Sister</option>
+							                    <option value="sister in law">Sister in Law</option>
+							                    <option value="granddaughter">Granddaughter</option>
+							                    <option value="grandson">Grandson</option>
+							                    <option value="niece">Niece</option>
+							                    <option value="nephew">Nephew</option>
+							                    <option value="cousin">Cousin</option>
+							                    <option value="friend">Friend</option>
+							                  </select>
+							                </span>
+							            </form>
+							            <div id="buttons" class="b-gua hidden">
+						            		<input id="next" class="add_another_gua" type="submit" value="Next" data-name="form-6">
+					            		</div>
+							        </div>
+					            	<div id="nomination" class="nominate hidden">
+							           	<form class="form form-7" method="" action="./">
+											<div class="will-app--title nom-text">
+								              <h4>You nominate</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_name" id="g_name" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Guardian Name</option>
+							                    	<option value="name-1">Add</option>
+							                    	<option value="name-1">Name</option>
+							                  </select>
+							                </span>
+
+							                <div class="will-app--title nom-text">
+								              <h4>to be the</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_type" id="g_type" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Please select</option>
+							                    <option value="Primary">Primary Guardian</option>
+							                  </select>
+							                </span>
+
+							                <div class="will-app--title nom-text">
+								              <h4>of</h4>
+								            </div>
+
+								            <span class="input input__span input__damsons select__arrow">
+							                  <select name="g_name2" id="g_name2" class="input__select" onchange="changeMe(this)">
+							                    <option value="default" selected disabled>Example dependant</option>
+							                    	<option value="name-1">Dependant One</option>
+							                  </select>
+							                </span>
+										</form>
+										<div class="form-link hidden">
+							                <button class="add-another-guardian">+ Add another guardian</button>
+							            </div>
+							        </div>
+							        <div id="buttons" class="b-nom hidden">
+						            	<input id="next" class="finish_another" type="submit" value="Next" data-name="form-7">
+					            	</div>
+					            	<div class="will-app--title nom-text hidden">
+						              <h4>Great! You have assigned guardians to all your dependants.</h4>
+						            </div>
+									<div id="buttons" class="n-one hidden">
+						            	<input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-7">
+						            </div>
+					            </div>
+							</div>
+  					</div>
+				</div>
+	  		</div>
+		</section>
+    	<section>
+			<header class="header">
+	  			<h4>Gifts</h4>
+	  		</header>
+			
+			<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-2"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-2">
+			            <p>Specific gifts are distributed before the rest of your estate and include:</p>
+
+			            <p> &bull; Property <br>
+			                &bull; The right to live in a property<br>
+			            	&bull; Life insurance<br>
+			            	&bull; Cash gifts<br>
+			            	&bull; Specific items (Jewellery, cars, family heirlooms etc)</p>
+
+			            <p>Specific gifts are paid out of the estate first, and should be described in a good amount of detail in the Will to avoid gift failure.</p>
+
+						<p>If a beneficiary dies before you then the specific gifts will be added to the remaining estate.</p>
+
+
+			            <p class="close-link"><a class="popup-close" data-close="find-2" href="#">Close</a></p>            
+			        </div>
+
+			        <h2>Step 3: Leaving gifts</h2>
+
+					<div class="gifts-section hidden">
+			          <div id="gifts">
+			              <div class="gifts_header">
+			              <h4>Adding gifts</h4>
+			              <h4>Chosen beneficiary</h4>
+			              </div>
+			              <ul id="gift_list">
+			                <li class="gift_list_item beneficiary_added">
+			                  <div class="gift_name">
+			                  <span>
+			                    <div class="name">49 Chapel Street</div>
+			                    <div class="relation">Property</div>
+			                  </span>
+			                  <a class="clear-gifts">Clear</a>
+			                  </div>
+			                  <div class="beneficiary_list">
+			                  <div class="beneficiary_name">
+			                  <span>
+			                    <div class="name">Stephen Connell</div>
+			                    <div class="relation">Primary Guardian</div>
+			                  </span>
+			                  <a class="clear-beneficiary">Clear</a>
+			                  </div>
+			                  </div>
+			                </li>
+			                <li class="gift_list_item">
+			                  <div class="gift_name">
+			                  <span>
+			                    <div class="name">182 Upholland Road</div>
+			                    <div class="relation">Right to live</div>
+			                  </span>
+			                  <a class="clear-gifts">Clear</a>
+			                  </div>
+			                </li>
+			                <li class="gift_list_item">
+			                  <div class="gift_name">
+			                  <span>
+			                    <div class="name">£10,000</div>
+			                    <div class="relation">Cash gift</div>
+			                  </span>
+			                  <a class="clear-gifts">Clear</a>
+			                  </div>
+			                </li>
+			              </ul>
+			          </div>
+			        </div>
+
+  					<div id="willapp">
+  						<div class="willapp-content">
+							<div class="will-app-wrapper active" data-tab="step-3-1">
+								<div class="will-app--title">
+						            <h4>Do you want to leave any specific gifts for people in your will?</h4>
+						        </div>
+								<form class="form form-8" method="" action="./">
+
+						            <div class="col-2 checkbox-2 gift-select">
+						              <span class="input input__span input__damsons input__gift">
+						                <input type="radio" name="c4" class="check-2 checkbox-custom checkbox-full" value="yes" id="g_yes" />
+						                <label class="checkbox-label" for="g_yes">
+						                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Yes</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__gift">
+						                <input type="radio" name="c4" class="check-2 checkbox-custom checkbox-full" value="no" id="g_no" />
+						                <label class="checkbox-label" for="g_no">
+						                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">No</span>
+						                </label>
+						              </span>
+						            </div>
+									
+									<div class="gifts_option hidden">
+										<div class="will-app--title">
+							              <h4>Choose a gift type</h4>
+							            </div>
+							            <div class="col-2 checkbox-2 checkbox-gifts hidden">
+										  <span class="input input__span input__damsons input__gifts">
+							                <input type="radio" name="g1" class="check-3 checkbox-custom checkbox-full" value="property" id="g_property" />
+							                <label class="checkbox-label" for="g_property">
+							                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Property</span>
+							                </label>
+							              </span>
+
+							              <span class="input input__span input__damsons input__gifts">
+							                <input type="radio" name="g1" class="check-3 checkbox-custom checkbox-full" value="right" id="g_right" />
+							                <label class="checkbox-label" for="g_right">
+							                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Right to live in a property</span>
+							                </label>
+							              </span>
+
+							              <span class="input input__span input__damsons input__gifts">
+							                <input type="radio" name="g1" class="check-3 checkbox-custom checkbox-full" value="cash" id="g_cash" />
+							                <label class="checkbox-label" for="g_cash">
+							                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Cash gift</span>
+							                </label>
+							              </span>
+
+							              <span class="input input__span input__damsons input__gifts">
+							                <input type="radio" name="g1" class="check-3 checkbox-custom checkbox-full" value="life" id="g_life" />
+							                <label class="checkbox-label" for="g_life">
+							                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Life insurance policy</span>
+							                </label>
+							              </span>
+
+							              <span class="input input__span input__damsons input__gifts">
+							                <input type="radio" name="g1" class="check-3 checkbox-custom checkbox-full" value="specific" id="g_specific" />
+							                <label class="checkbox-label" for="g_specific">
+							                  <span class="input__gift-span"><img src="dist/images/wapp-icon-01.png" width="20">Specific item</span>
+							                </label>
+							              </span>
+							            </div>
+						            </div>
+								</form>
+								<div id="buttons" class="b-two opt">
+									<input id="next" class="next hidden" type="submit" value="Next">
+									<input id="continue" class="continue hidden" type="submit" value="Continue" data-name="form-8">
+								</div>
+							</div>
+							<div class="will-app-wrapper" data-tab="step-3-2">
+								<div class="gift_forms">
+									<form id="gift_property" class="form form-9 hidden" method="" action="./">
+										<div class="will-app--title">
+								            <h4>What is the address of the property you want to leave to someone?</h4>
+								        </div>
+
+								        <div class="input__header">
+							              <h5>Add property</h5>
+							              <p>Type your postcode or 1st line of address into the boxed field below.</p>
+							            </div>
+
+							            <span class="input input__span input__damsons">
+							                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+							                <label class="input__label input__label-damsons" for="add-search">
+							                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              <h5>Address search results</h5>
+							            </div>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons" name="p_address">
+							                <label class="input__label input__label-damsons" for="p_address">
+							                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons" name="p_city">
+							                <label class="input__label input__label-damsons" for="p_city">
+							                  <span class="input__label-content input__label-content-damsons">City</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons" name="p_county">
+							                <label class="input__label input__label-damsons" for="p_county">
+							                  <span class="input__label-content input__label-content-damsons">County</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons" name="p_postcode">
+							                <label class="input__label input__label-damsons" for="p_postcode">
+							                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              	<h5>Current Property Status:</h5>
+							            </div>
+
+							            <div class="col-2 checkbox-2 checkbox-gifts">
+								            <span class="input input__span input__damsons input__gift">
+								                <input type="radio" name="c5" class="check-2 checkbox-custom checkbox-full" value="sole" id="p_sole" />
+								                <label class="checkbox-label checkbox-text" for="p_sole">
+								                  <span class="input__gift-span">I am the sole owner of the property</span>
+								                </label>
+								            </span>
+
+								            <span class="input input__span input__damsons input__gift input__even">
+								                <input type="radio" name="c5" class="check-2 checkbox-custom checkbox-full" value="joint" id="p_joint" />
+								                <label class="checkbox-label checkbox-text" for="p_joint">
+								                  <span class="input__gift-span">I am a joint owner of the property</span>
+								                </label>
+								            </span>
+							            </div>
+
+							            <div class="form-link gift_footer">
+							              	<button type="submit" class="back-gift"> + add another gift</button>
+							            </div>
+
+							            <div id="buttons" class="b-one">
+											<input id="finish" class="finish-adding-gifts" type="submit" value="Finish adding gifts">
+										</div>
+
+									</form>
+									<form id="gift_right" class="form form-10 hidden" method="" action="./">
+
+										<div class="will-app--title">
+								            <h4>What is the address of the property you want to give somebody the right to live in?</h4>
+								        </div>
+										
+										<div class="input__header">
+							              <h5>Add right-to-live property:</h5>
+							              <p>Type your postcode or 1st line of address into the boxed field below.</p>
+							            </div>
+
+							            <span class="input input__span input__damsons">
+							                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+							                <label class="input__label input__label-damsons" for="add-search">
+							                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              <h5>Address search results</h5>
+							            </div>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons" name="g_address">
+							                <label class="input__label input__label-damsons" for="p_address">
+							                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons" name="p_city">
+							                <label class="input__label input__label-damsons" for="p_city">
+							                  <span class="input__label-content input__label-content-damsons">City</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons" name="p_county">
+							                <label class="input__label input__label-damsons" for="p_county">
+							                  <span class="input__label-content input__label-content-damsons">County</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons" name="p_postcode">
+							                <label class="input__label input__label-damsons" for="p_postcode">
+							                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              	<h5>The right terminates if/when the individual:</h5>
+							            </div>
+
+							            <div class="col-2 checkbox-2 checkbox-gifts">
+								            <span class="input input__span input__damsons input__gift">
+								                <input type="radio" name="c6" class="check-2 checkbox-custom checkbox-full" value="dies" id="r_dies" />
+								                <label class="checkbox-label checkbox-text" for="r_dies">
+								                  <span class="input__gift-span">Dies</span>
+								                </label>
+								            </span>
+
+								            <span class="input input__span input__damsons input__gift">
+								                <input type="radio" name="c6" class="check-2 checkbox-custom checkbox-full" value="dmarries" id="r_dmarries" />
+								                <label class="checkbox-label checkbox-text" for="r_dmarries">
+								                  <span class="input__gift-span">Dies or marries</span>
+								                </label>
+								            </span>
+
+								            <span class="input input__span input__damsons input__gift">
+								                <input type="radio" name="c6" class="check-2 checkbox-custom checkbox-full" value="dmarries" id="r_dcare" />
+								                <label class="checkbox-label checkbox-text" for="r_dcare">
+								                  <span class="input__gift-span">Dies or goes into a care home</span>
+								                </label>
+								            </span>
+
+								            <span class="input input__span input__damsons input__gift input__even">
+								                <input type="radio" name="c6" class="check-2 checkbox-custom checkbox-full" value="dmarries" id="r_all" />
+								                <label class="checkbox-label checkbox-text" for="r_all">
+								                  <span class="input__gift-span">Dies, marries or goes into a care home</span>
+								                </label>
+								            </span>
+							            </div>
+
+										<div class="form-link gift_footer">
+							              	<button type="submit" class="back-gift"> + add another gift</button>
+							            </div>
+
+										<div id="buttons" class="b-one">
+											<input id="finish" class="finish-adding-gifts" type="submit" value="Finish adding gifts">
+										</div>
+
+									</form>
+									<form id="gift_cash" class="form form-11 hidden" method="" action="./">
+
+										<div class="will-app--title">
+								            <h4>Leave a cash gift to somebody</h4>
+								        </div>
+
+								        <span class="input input__span input__damsons">
+							                <input type="number" id="cash_amount" class="input__field input__field-damsons" name="cash_amount">
+							                <label class="input__label input__label-damsons" for="cash_amount">
+							                  <span class="input__label-content input__label-content-damsons">Cash Amount (£)</small></span>
+							                </label>
+							            </span>
+										
+										<div class="form-link gift_footer">
+							              	<button type="submit" class="back-gift"> + add another gift</button>
+							            </div>
+
+										<div id="buttons" class="b-one">
+											<input id="finish" class="finish-adding-gifts" type="submit" value="Finish adding gifts">
+										</div>
+
+									</form>
+									<form id="gift_life" class="form form-12 hidden" method="" action="./">
+
+										<div class="will-app--title">
+								            <h4>Leave somebody the proceeds from a life insurance policty you hold.</h4>
+								        </div>
+
+								        <span class="input input__span input__damsons">
+							                <input type="text" id="life_company" class="input__field input__field-damsons" name="life_company">
+							                <label class="input__label input__label-damsons" for="life_company">
+							                  <span class="input__label-content input__label-content-damsons">Insurance company name</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons">
+							                <input type="text" id="life_policy" class="input__field input__field-damsons" name="life_policy">
+							                <label class="input__label input__label-damsons" for="life_policy">
+							                  <span class="input__label-content input__label-content-damsons">Insurance policy number</small></span>
+							                </label>
+							            </span>
+										
+										<div class="form-link gift_footer">
+							              	<button type="submit" class="back-gift"> + add another gift</button>
+							            </div>
+
+										<div id="buttons" class="b-one">
+											<input id="finish" class="finish-adding-gifts" type="submit" value="Finish adding gifts">
+										</div>
+
+									</form>
+									<form id="gift_specific" class="form form-13 hidden" method="" action="./">
+										
+										<div class="will-app--title">
+								            <h4>Leave a specific item</h4>
+								        </div>
+
+								        <span class="input input__span input__damsons">
+							                <input type="text" id="specific_gift" class="input__field input__field-damsons" name="specific_gift">
+							                <label class="input__label input__label-damsons" for="specific_gift">
+							                  <span class="input__label-content input__label-content-damsons">I would like to leave my ...</small></span>
+							                </label>
+							            </span>
+										
+										<div class="form-link gift_footer">
+							              	<button type="submit" class="back-gift"> + add another gift</button>
+							            </div>
+
+										<div id="buttons" class="b-one">
+											<input id="finish" class="finish-adding-gifts" type="submit" value="Finish adding gifts">
+										</div>
+
+									</form>
+						        </div>
+								<div class="will-app--title nom-text hidden">
+						            <h4>Great! You have added all your gifts.</h4>
+						        </div>
+								<div id="buttons" class="n-one hidden">
+						            <input id="next" class="next" type="submit" value="Next" data-name="form-9">
+						        </div>
+							</div>
+							<div class="will-app-wrapper" data-tab="step-3-3">
+								<form id="beneficiary_form" class="form form-14" method="" action="./">
+
+								<div class="will-app--title">
+								    <h4>Now, select a beneficiary to receive your gifts</h4>
+								</div>
+
+								<div class="input__header">
+							        <h5>Chosen beneficiary</h5>
+							    </div>
+
+								<div class="beneficiary_section">
+										<span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+								</div>
+
+								<div class="form-link">
+							        <button type="submit" class="add-beneficiary"> + add another beneficiary</button>
+							    </div>
+
+								<div class="input__header">
+							        <h5>Will receive</h5>
+							    </div>
+
+								<div class="receive_section">
+										<span class="input input__span input__damsons gift_item">
+											<input type="radio" name="r1" class="check-4 checkbox-custom checkbox-full" id="r_select" />
+							                <label class="checkbox-label" for="r1">
+							                  <span class="input__gift-span">
+							                  	<div class="gift_name">
+								                  <span>
+								                    <div class="name">49 Chapel Street</div>
+							                    	<div class="relation">Property</div>
+								                  </span>
+								                  <a class="clear-gift"></a>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons gift_item">
+											<input type="radio" name="r1" class="check-4 checkbox-custom checkbox-full" id="r_select" />
+							                <label class="checkbox-label" for="r1">
+							                  <span class="input__gift-span">
+							                  	<div class="gift_name">
+								                  <span>
+								                    <div class="name">49 Chapel Street</div>
+							                    	<div class="relation">Property</div>
+								                  </span>
+								                  <a class="clear-gift"></a>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons gift_item">
+											<input type="radio" name="r1" class="check-4 checkbox-custom checkbox-full" id="r_select" />
+							                <label class="checkbox-label" for="r1">
+							                  <span class="input__gift-span">
+							                  	<div class="gift_name">
+								                  <span>
+								                    <div class="name">49 Chapel Street</div>
+							                    	<div class="relation">Property</div>
+								                  </span>
+								                  <a class="clear-gift"></a>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons gift_item">
+											<input type="radio" name="r1" class="check-4 checkbox-custom checkbox-full" id="r_select" />
+							                <label class="checkbox-label" for="r1">
+							                  <span class="input__gift-span">
+							                  	<div class="gift_name">
+								                  <span>
+								                    <div class="name">49 Chapel Street</div>
+							                    	<div class="relation">Property</div>
+								                  </span>
+								                  <a class="clear-gift"></a>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+								</div>
+
+								<div class="input__header">
+							        <h5>At which age?</h5>
+							    </div>
+
+							    <span class="input input__span input__damsons">
+							        <input type="number" id="b_age" class="input__field input__field-damsons" name="b_age">
+							        <label class="input__label input__label-damsons" for="b_age">
+							            <span class="input__label-content input__label-content-damsons">Age of inheritance (optional)</small></span>
+							        </label>
+							    </span>
+								
+								<div id="buttons" class="b-one">
+									<input id="finish" class="finish-matching" type="submit" value="Pair gift and beneficiary" data-name="form-14">
+								</div>
+
+								</form>
+								<form id="add_beneficiary" class="form form-15 hidden" method="" action="./">
+										
+									<div class="will-app--title">
+								        <h4>Add a beneficiary</h4>
+								    </div>
+
+								    <span class="input input__span input__damsons select__arrow">
+						                <select name="b_type" id="b_type" class="input__select ignore" onchange="changeMe(this)">
+							        		<option value="default" selected disabled>Please select...</option>
+							        		<option value="individual">Individual</option>
+							        		<option value="charity">Charity</option>
+							                <option value="org">Organisation</option>
+						        		</select>
+						            </span>
+
+						            <div id="individual" class="ben_form hidden">
+
+									<span class="input input__span input__damsons">
+							            <input type="text" id="b_firstname" class="input__field input__field-damsons ignore" name="b_firstname">
+							            <label class="input__label input__label-damsons" for="b_firstname">
+							                <span class="input__label-content input__label-content-damsons">First name</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_middlename" class="input__field input__field-damsons ignore" name="b_middlename">
+							            <label class="input__label input__label-damsons" for="b_middlename">
+							                <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_surname" class="input__field input__field-damsons ignore" name="b_surname">
+							            <label class="input__label input__label-damsons" for="b_surname">
+							                <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons select__arrow">
+							            <select name="b_relstatus" id="b_relstatus" class="input__select ignore" onchange="changeMe(this)">
+							                <option value="default" selected disabled>Relationship to ...</option>
+							                <option value="son">Son</option>
+							                <option value="step son">Step Son</option>
+							                <option value="son in law">Son in Law</option>
+							                <option value="daughter">Daughter</option>
+							                <option value="step daughter">Step Daughter</option>
+							                <option value="daughter in law">Daughter in Law</option>
+							                <option value="brother">Brother</option>
+							                <option value="step brother">Step Brother</option>
+							                <option value="brother in law">Brother in Law</option>
+							                <option value="sister">Sister</option>
+							                <option value="step sister">Step Sister</option>
+							                <option value="sister in law">Sister in Law</option>
+							                <option value="granddaughter">Granddaughter</option>
+							                <option value="grandson">Grandson</option>
+							                <option value="niece">Niece</option>
+							                <option value="nephew">Nephew</option>
+							                <option value="cousin">Cousin</option>
+							                <option value="friend">Friend</option>
+							            </select>
+							        </span>
+
+							        </div>
+
+							        <div id="charity" class="ben_form hidden">
+
+							        	<span class="input input__span input__damsons">
+								            <input type="text" id="b_charity" class="input__field input__field-damsons ignore" name="b_charity">
+								            <label class="input__label input__label-damsons" for="b_charity">
+								                <span class="input__label-content input__label-content-damsons">Charity name</small></span>
+								            </label>
+								        </span>
+
+								        <span class="input input__span input__damsons">
+								            <input type="text" id="b_cnumber" class="input__field input__field-damsons ignore" name="b_cnumber">
+								            <label class="input__label input__label-damsons" for="b_cnumber">
+								                <span class="input__label-content input__label-content-damsons">Registered charity number</small></span>
+								            </label>
+								        </span>
+
+							        </div>
+
+							        <div id="org" class="ben_form hidden">
+
+							        	<span class="input input__span input__damsons">
+								            <input type="text" id="b_organisation" class="input__field input__field-damsons ignore" name="b_organisation">
+								            <label class="input__label input__label-damsons" for="b_organisation">
+								                <span class="input__label-content input__label-content-damsons">Organisation name</small></span>
+								            </label>
+								        </span>
+
+								        <span class="input input__span input__damsons">
+							                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+							                <label class="input__label input__label-damsons" for="add-search">
+							                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              <h5>Address search results</h5>
+							            </div>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons ignore" name="b_address">
+							                <label class="input__label input__label-damsons" for="p_address">
+							                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons ignore" name="p_city">
+							                <label class="input__label input__label-damsons" for="p_city">
+							                  <span class="input__label-content input__label-content-damsons">City</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons ignore" name="p_county">
+							                <label class="input__label input__label-damsons" for="p_county">
+							                  <span class="input__label-content input__label-content-damsons">County</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons ignore" name="p_postcode">
+							                <label class="input__label input__label-damsons" for="p_postcode">
+							                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+							                </label>
+							            </span>
+
+								    
+							        </div>
+
+									<div id="buttons" class="b-one">
+										<input id="finish" class="finish-adding-beneficiary" type="submit" value="Add beneficiary">
+									</div>
+
+								</form>
+								<div class="will-app--title nom-text hidden">
+						            <h4>Excellent! You have now paired up all your gifts.</h4>
+						        </div>
+								<div id="buttons" class="n-one hidden">
+						            <input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-15">
+						        </div>
+							</div>
+						</div>
+					</div>
+	  			</div>
+	  		</div>
+
+    	</section>
+    	<section>
+			<header class="header">
+	  			<h4>My Estate</h4>
+	  		</header>
+
+	  		<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-4"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-4">
+			            <p>This area states the beneficiaries of your entire estate when all gifts and expenses have been taken into account.</p>
+
+						<p>For the beneficiaries you add, you can state the percentage share of your estate they are to receive, and if required an age they have to be before they can inherit.</p>
+
+			            <p class="close-link"><a class="popup-close" data-close="find-4" href="#">Close</a></p>            
+			        </div>
+
+			        <h2>Step 4: Remaining Estate</h2>
+
+			        <div class="estate-section hidden">
+			          <div id="estate">
+			              <div class="estates_header">
+			              <h4>Your beneficiaries</h4>
+			              </div>
+			              <ul id="estate_list">
+			                <li class="estate_list_item">
+			                  <div class="estate_name">
+			                  <span>
+			                    <div class="name">Sebastien Connell</div>
+			                    <div class="relation">Percent: Equal Shares</div>
+			                  </span>
+			                  <a class="clear-estate">Clear</a>
+			                  </div>
+			                </li>
+			              </ul>
+			          </div>
+			        </div>
+
+
+  					<div id="willapp">
+  						<div class="willapp-content">
+							<div class="will-app-wrapper active" data-tab="step-4-1">
+								<form class="form form-16" method="" action="./">
+								<div class="will-app--title">
+						            <h4>Choose a beneficiary</h4>
+						        </div>
+
+								<div class="beneficiary_section">
+										<span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+								</div>
+
+								<div class="form-link">
+							        <button type="submit" class="add-beneficiary"> + add another beneficiary</button>
+							    </div>
+
+								<span class="input input__span input__damsons">
+							        <input type="number" id="b_percentage" class="input__field input__field-damsons" name="b_percentage">
+							        <label class="input__label input__label-damsons" for="b_percentage">
+							            <span class="input__label-content input__label-content-damsons">Percentage share (leave blank if equal)</small></span>
+							        </label>
+							    </span>
+
+								<span class="input input__span input__damsons">
+							        <input type="number" id="b_age" class="input__field input__field-damsons" name="b_age">
+							        <label class="input__label input__label-damsons" for="b_age">
+							            <span class="input__label-content input__label-content-damsons">Age of inheritance (optional)</small></span>
+							        </label>
+							    </span>
+
+							    <div id="buttons" class="b-one">
+									<input id="finish" class="finish-matching" type="submit" value="Finish adding beneficiaries" data-name="form-16">
+								</div>
+
+								</form>
+								<form id="add_beneficiary" class="form form-17 hidden" method="" action="./">
+										
+									<div class="will-app--title">
+								        <h4>Add a beneficiary</h4>
+								    </div>
+
+								    <span class="input input__span input__damsons select__arrow">
+						                <select name="e_type" id="e_type" class="input__select ignore" onchange="changeMe(this)">
+							        		<option value="default" selected disabled>Please select...</option>
+							        		<option value="individual2">Individual</option>
+							        		<option value="charity2">Charity</option>
+							                <option value="org2">Organisation</option>
+						        		</select>
+						            </span>
+
+						            <div id="individual2" class="est_form hidden">
+
+									<span class="input input__span input__damsons">
+							            <input type="text" id="b_firstname" class="input__field input__field-damsons ignore" name="b_firstname">
+							            <label class="input__label input__label-damsons" for="b_firstname">
+							                <span class="input__label-content input__label-content-damsons">First name</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_middlename" class="input__field input__field-damsons ignore" name="b_middlename">
+							            <label class="input__label input__label-damsons" for="b_middlename">
+							                <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_surname" class="input__field input__field-damsons ignore" name="b_surname">
+							            <label class="input__label input__label-damsons" for="b_surname">
+							                <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons select__arrow">
+							            <select name="b_relstatus" id="b_relstatus" class="input__select ignore" onchange="changeMe(this)">
+							                <option value="default" selected disabled>Relationship to ...</option>
+							                <option value="son">Son</option>
+							                <option value="step son">Step Son</option>
+							                <option value="son in law">Son in Law</option>
+							                <option value="daughter">Daughter</option>
+							                <option value="step daughter">Step Daughter</option>
+							                <option value="daughter in law">Daughter in Law</option>
+							                <option value="brother">Brother</option>
+							                <option value="step brother">Step Brother</option>
+							                <option value="brother in law">Brother in Law</option>
+							                <option value="sister">Sister</option>
+							                <option value="step sister">Step Sister</option>
+							                <option value="sister in law">Sister in Law</option>
+							                <option value="granddaughter">Granddaughter</option>
+							                <option value="grandson">Grandson</option>
+							                <option value="niece">Niece</option>
+							                <option value="nephew">Nephew</option>
+							                <option value="cousin">Cousin</option>
+							                <option value="friend">Friend</option>
+							            </select>
+							        </span>
+
+							        </div>
+
+							        <div id="charity2" class="est_form hidden">
+
+							        	<span class="input input__span input__damsons">
+								            <input type="text" id="b_charity" class="input__field input__field-damsons ignore" name="b_charity">
+								            <label class="input__label input__label-damsons" for="b_charity">
+								                <span class="input__label-content input__label-content-damsons">Charity name</small></span>
+								            </label>
+								        </span>
+
+								        <span class="input input__span input__damsons">
+								            <input type="text" id="b_cnumber" class="input__field input__field-damsons ignore" name="b_cnumber">
+								            <label class="input__label input__label-damsons" for="b_cnumber">
+								                <span class="input__label-content input__label-content-damsons">Registered charity number</small></span>
+								            </label>
+								        </span>
+
+							        </div>
+
+							        <div id="org2" class="est_form hidden">
+
+							        	<span class="input input__span input__damsons">
+								            <input type="text" id="b_organisation" class="input__field input__field-damsons ignore" name="b_organisation">
+								            <label class="input__label input__label-damsons" for="b_organisation">
+								                <span class="input__label-content input__label-content-damsons">Organisation name</small></span>
+								            </label>
+								        </span>
+
+								        <span class="input input__span input__damsons">
+							                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+							                <label class="input__label input__label-damsons" for="add-search">
+							                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              <h5>Address search results</h5>
+							            </div>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons ignore" name="b_address">
+							                <label class="input__label input__label-damsons" for="p_address">
+							                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons ignore" name="p_city">
+							                <label class="input__label input__label-damsons" for="p_city">
+							                  <span class="input__label-content input__label-content-damsons">City</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons ignore" name="p_county">
+							                <label class="input__label input__label-damsons" for="p_county">
+							                  <span class="input__label-content input__label-content-damsons">County</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons ignore" name="p_postcode">
+							                <label class="input__label input__label-damsons" for="p_postcode">
+							                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+							                </label>
+							            </span>
+
+								    
+							        </div>
+
+									<div id="buttons" class="b-one">
+										<input id="finish" class="finish-adding-estate" type="submit" value="Add beneficiary">
+									</div>
+
+								</form>
+								<div class="will-app--title nom-text hidden">
+						            <h4>Amazing! You have selected who will receive your remaining estate.</h4>
+						        </div>
+								<div id="buttons" class="n-one hidden">
+						            <input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-16">
+						        </div>
+							</div>
+						</div>
+					</div>
+
+			    </div>
+			</div>
+    	</section>
+    	<section>
+			<header class="header">
+	  			<h4>Adding Executors</h4>
+	  		</header>
+
+	  		<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-5"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-5">
+			            <p>An executor is the person or professional service appointed to carry out the wishes in your Will when you pass away. They are responsible for all aspects of administering your estate, including:</p>
+						<p> &bull; Payment of any inheritance tax<br>
+							&bull; Distributing assets<br>
+							&bull; Valuing your estate<br>
+							&bull; Gathering all necessary financial and legal documents<br>
+							&bull; Locating all known bank accounts and savings accounts</p>
+
+						<p>This substantial amount of duties can last for months; therefore we recommend Damsons Estate Administration to do the job for you.</p>
+
+						<h5>Why choose Damsons Estate Administration</h5>
+
+						<p>Damsons Estate Administration provides a professional executor service that takes away all of the issues commonly associated with being executor to an estate.</p>
+
+						<p>Benefits of using Damsons Estate Administration include:</p>
+
+						<p> &bull; All money received from the estate will be distributed immediately according to the instructions set out in your Will.<br>
+							&bull; Get the best price possible for assets and charges e.g. estate agent fees, stock broker fees.<br>
+							&bull; Immune to family pressures that are sometimes the cause of family feuds when estates are distributed.<br>
+							&bull; Your estate will have its own dedicated Estate Administration expert.<br>
+							&bull; With no hidden fees, Damsons Estate Administration charges a flat fee of 3% of your final estate value when you pass away.<br>
+							&bull; We will update your family regularly on any progress made.</p>
+
+
+
+			            <p class="close-link"><a class="popup-close" data-close="find-5" href="#">Close</a></p>            
+			        </div>
+
+			        <h2>Step 5: Adding Executors</h2>
+
+			        <div class="executors-section hidden">
+			          <div id="executors">
+			              <div class="executors_header">
+			              <h4>Your Executors</h4>
+			              </div>
+			              <ul id="executor_list">
+			                <li class="executor_list_item">
+			                  <div class="executor_name">
+			                  <span>
+			                    <div class="name">Sebastien Connell</div>
+			                    <div class="relation">Son</div>
+			                  </span>
+			                  <a class="clear-executor">Clear</a>
+			                  </div>
+			                </li>
+			              </ul>
+			          </div>
+			        </div>
+
+			        <div id="willapp">
+  						<div class="willapp-content">
+  							<div class="will-app-wrapper active" data-tab="step-5-1">
+								<form class="form form-18" method="" action="./">
+									<div class="will-app--title">
+						              <h4>Would you like to select Damsons Estate Administration as your Executors?</h4>
+						            </div>
+
+						            <div class="col-2 checkbox-2">
+						              <span class="input input__span input__damsons input__ex">
+						                <input type="radio" name="c7" class="check-5 checkbox-custom checkbox-full" value="yes" id="ex_yes" />
+						                <label class="checkbox-label" for="ex_yes">
+						                  <span class="input__ex-span"><img src="dist/images/wapp-icon-01.png" width="20">Yes</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__ex">
+						                <input type="radio" name="c7" class="check-5 checkbox-custom checkbox-full" value="no" id="ex_no" />
+						                <label class="checkbox-label" for="ex_no">
+						                  <span class="input__ex-span"><img src="dist/images/wapp-icon-01.png" width="20">No</span>
+						                </label>
+						              </span>
+						            </div>
+								</form>
+								<div id="buttons" class="b-two opt add-ex">
+					                <input id="next" class="next hidden" type="submit" value="Add executor">
+					            </div>
+  							</div>
+							<div class="will-app-wrapper" data-tab="step-5-2">
+								<form class="form form-19" method="" action="./">
+								<div class="will-app--title">
+						            <h4>Choose an executor</h4>
+						        </div>
+
+								<div class="beneficiary_section">
+										<span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+							            <span class="input input__span input__damsons beneficiary_item">
+											<input type="radio" name="b1" class="check-3 checkbox-custom checkbox-full" id="b_select" />
+							                <label class="checkbox-label" for="b1">
+							                  <span class="input__gift-span">
+							                  	<div class="beneficiary_name">
+								                  <span>
+								                    <div class="name">Sebastien Connell</div>
+								                    <div class="relation">Son</div>
+								                  </span>
+								                </div>
+							                  </span>
+							                </label>
+							            </span>
+								</div>
+
+								<div class="form-link">
+							        <button type="submit" class="add-beneficiary"> + add a new executor</button>
+							    </div>
+
+							    <div id="buttons" class="b-one">
+									<input id="finish" class="finish-matching" type="submit" value="Finish adding executors" data-name="form-16">
+								</div>
+
+								</form>
+								<form id="add_beneficiary" class="form form-20 hidden" method="" action="./">
+										
+									<div class="will-app--title">
+								        <h4>Add a executor</h4>
+								    </div>
+
+								    <span class="input input__span input__damsons select__arrow">
+						                <select name="ex_type" id="ex_type" class="input__select ignore" onchange="changeMe(this)">
+							        		<option value="default" selected disabled>Please select...</option>
+							        		<option value="individual3">Individual</option>
+							                <option value="org3">Organisation</option>
+						        		</select>
+						            </span>
+
+						            <div id="individual3" class="ex_form hidden">
+
+									<span class="input input__span input__damsons">
+							            <input type="text" id="b_firstname" class="input__field input__field-damsons ignore" name="b_firstname">
+							            <label class="input__label input__label-damsons" for="b_firstname">
+							                <span class="input__label-content input__label-content-damsons">First name</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_middlename" class="input__field input__field-damsons ignore" name="b_middlename">
+							            <label class="input__label input__label-damsons" for="b_middlename">
+							                <span class="input__label-content input__label-content-damsons">Middle name (optional)</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons">
+							            <input type="text" id="b_surname" class="input__field input__field-damsons ignore" name="b_surname">
+							            <label class="input__label input__label-damsons" for="b_surname">
+							                <span class="input__label-content input__label-content-damsons">Surname</small></span>
+							            </label>
+							        </span>
+
+							        <span class="input input__span input__damsons select__arrow">
+							            <select name="b_relstatus" id="b_relstatus" class="input__select ignore" onchange="changeMe(this)">
+							                <option value="default" selected disabled>Relationship to ...</option>
+							                <option value="son">Son</option>
+							                <option value="step son">Step Son</option>
+							                <option value="son in law">Son in Law</option>
+							                <option value="daughter">Daughter</option>
+							                <option value="step daughter">Step Daughter</option>
+							                <option value="daughter in law">Daughter in Law</option>
+							                <option value="brother">Brother</option>
+							                <option value="step brother">Step Brother</option>
+							                <option value="brother in law">Brother in Law</option>
+							                <option value="sister">Sister</option>
+							                <option value="step sister">Step Sister</option>
+							                <option value="sister in law">Sister in Law</option>
+							                <option value="granddaughter">Granddaughter</option>
+							                <option value="grandson">Grandson</option>
+							                <option value="niece">Niece</option>
+							                <option value="nephew">Nephew</option>
+							                <option value="cousin">Cousin</option>
+							                <option value="friend">Friend</option>
+							            </select>
+							        </span>
+
+							        </div>							     
+
+							        <div id="org3" class="ex_form hidden">
+
+							        	<span class="input input__span input__damsons">
+								            <input type="text" id="b_organisation" class="input__field input__field-damsons ignore" name="b_organisation">
+								            <label class="input__label input__label-damsons" for="b_organisation">
+								                <span class="input__label-content input__label-content-damsons">Organisation name</small></span>
+								            </label>
+								        </span>
+
+								        <span class="input input__span input__damsons">
+							                <input type="text" id="txtAddressSearchSeparateField" class="input__field input__field-damsons ignore" name="add-search">
+							                <label class="input__label input__label-damsons" for="add-search">
+							                  <span class="input__label-content input__label-content-damsons">Search Address Here...</small></span>
+							                </label>
+							            </span>
+
+							            <div class="input__header">
+							              <h5>Address search results</h5>
+							            </div>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtLine1SeparateField" class="input__field input__field-damsons ignore" name="b_address">
+							                <label class="input__label input__label-damsons" for="p_address">
+							                  <span class="input__label-content input__label-content-damsons">Address Line 1</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtTownSeparateField" class="input__field input__field-damsons ignore" name="p_city">
+							                <label class="input__label input__label-damsons" for="p_city">
+							                  <span class="input__label-content input__label-content-damsons">City</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtCountySeparateField" class="input__field input__field-damsons ignore" name="p_county">
+							                <label class="input__label input__label-damsons" for="p_county">
+							                  <span class="input__label-content input__label-content-damsons">County</small></span>
+							                </label>
+							            </span>
+
+							            <span class="input input__span input__damsons input--filled">
+							                <input type="text" id="txtPostcodeSeparateField" class="input__field input__field-damsons ignore" name="p_postcode">
+							                <label class="input__label input__label-damsons" for="p_postcode">
+							                  <span class="input__label-content input__label-content-damsons">Postcode</small></span>
+							                </label>
+							            </span>
+
+								    
+							        </div>
+
+									<div id="buttons" class="b-one">
+										<input id="finish" class="finish-adding-ex" type="submit" value="Add executor">
+									</div>
+
+								</form>
+								<div class="will-app--title nom-text hidden">
+						            <h4>Great! You have added all your executors.</h4>
+						        </div>
+								<div id="buttons" class="n-one hidden">
+						            <input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-16">
+						        </div>
+
+							</div>
+						</div>
+					</div>
+
+
+			    </div>
+			</div>
+
+    	</section>
+    	<section>
+			<header class="header">
+	  			<h4>Funeral plans</h4>
+	  		</header>
+	  		<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-6"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-6">
+			            <p>Use the form below to choose your funeral type, plus this area also informs us if you have a pre-paid funeral plan which can be written into your Will.</p>
+
+			            <p class="close-link"><a class="popup-close" data-close="find-6" href="#">Close</a></p>            
+			        </div>
+
+			        <h2>Step 6: Funeral Plans</h2>
+
+			        <div id="willapp">
+  						<div class="willapp-content">
+  							<div class="will-app-wrapper active" data-tab="step-6-1">
+								<form class="form form-20" method="" action="./">
+									<div class="will-app--title">
+						              <h4>Funeral plan for...</h4>
+						            </div>
+
+						            <div class="input__header">
+						              <p>Do you currently have a pre-paid funeral plan?</p>
+						            </div>
+
+						            <div class="col-2 checkbox-2">
+						              <span class="input input__span input__damsons input__fp">
+						                <input type="radio" name="c8" class="check-6 checkbox-custom checkbox-full" value="yes" id="fp_yes" />
+						                <label class="checkbox-label" for="fp_yes">
+						                  <span class="input__fp-span"><img src="dist/images/wapp-icon-01.png" width="20">Yes</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__fp">
+						                <input type="radio" name="c8" class="check-6 checkbox-custom checkbox-full" value="no" id="fp_no" />
+						                <label class="checkbox-label" for="fp_no">
+						                  <span class="input__fp-span"><img src="dist/images/wapp-icon-01.png" width="20">No</span>
+						                </label>
+						              </span>
+						            </div>
+
+						            <div class="will-app--title">
+						              <h4>Funeral preference for...</h4>
+						            </div>
+
+						            <div class="input__header">
+						              <p>I wish for my body to be:</p>
+						            </div>
+
+						            <div class="col-2 checkbox-2 checkbox-multiple">
+						              <span class="input input__span input__damsons input__bod">
+						                <input type="radio" name="c9" class="check-7 checkbox-custom checkbox-full" value="buried" id="fp_buried" />
+						                <label class="checkbox-label" for="fp_buried">
+						                  <span class="input__fp-span"><img src="dist/images/wapp-icon-01.png" width="20">Buried</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__bod">
+						                <input type="radio" name="c9" class="check-7 checkbox-custom checkbox-full" value="cremated" id="fp_cremated" />
+						                <label class="checkbox-label" for="fp_cremated">
+						                  <span class="input__fp-span"><img src="dist/images/wapp-icon-01.png" width="20">Cremated</span>
+						                </label>
+						              </span>
+
+						              <span class="input input__span input__damsons input__bod">
+						                <input type="radio" name="c9" class="check-7 checkbox-custom checkbox-full" value="no" id="fp_no" />
+						                <label class="checkbox-label" for="fp_no">
+						                  <span class="input__fp-span"><img src="dist/images/wapp-icon-01.png" width="20">I have no preference</span>
+						                </label>
+						              </span>
+						            </div>
+
+
+								</form>
+								<div id="buttons" class="n-one">
+						            <input id="continue" class="continue-add" type="submit" value="Continue" data-name="form-16">
+						        </div>
+  							</div>
+  						</div>
+  					</div>
+			    </div>
+			</div>
+    	</section>
+    	<section>
+			<header class="header">
+	  			<h4>Summary</h4>
+	  		</header>
+	  		<div class="will-app-content">
+	  			<div class="will-app-wrap">
+	  				<div class="find-more">
+			          <a class="more-link" data-open="find-7"><span><i class="fa fa-fw fa-lg fa-question-circle" aria-hidden="true"></i>Find Out More</span></a>
+			        </div>
+			        <div class="find-more-content hidden" data-tab="find-7">
+			            <p>Check all the details you have entered within this application. If you want to make any changes to any of the areas of the Will application, click on the edit button within that area.</p>
+
+			            <p class="close-link"><a class="popup-close" data-close="find-7" href="#">Close</a></p>            
+			        </div>
+
+			        <h2>Will Summary</h2>
+					
+					<div id="will-summary">
+						<section>
+				        <h3>Personal Details</h3>
+						</section>
+
+						<section>
+				        <h3>Guardians</h3>
+						</section>
+
+						<section>
+				        <h3>Gifts</h3>
+						</section>
+
+						<section>
+				        <h3>My Estate</h3>
+						</section>
+
+						<section>
+				        <h3>Executors</h3>
+						</section>
+
+						<section>
+				        <h3>Funeral Plans</h3>
+						</section>
+					</div>
+			        
+			        <div id="buttons" class="n-one">
+						<input id="continue" class="continue-add" type="submit" value="Create your will">
+					</div>
+			    </div>
+			</div>
+    	</section>
+	</div>
+</div>
+
+<div class="side col-3 right">
+	<div class="side-contain">
+	
+		<div class="side-widget">
+			<div class="side-widget-header">
+				<img src="">
+				<h3>Call us</h3>
+			</div>
+
+			<div class="side-widget-content">
+				<p>Give us a call for free to talk to our expert Will writers</p>
+				<div class="phone-number">0800 088 4670*</div>
+				<p>Monday to Friday 8am to 8pm<br>
+				Saturday 9am to 1pm<br>
+				Sunday and Bank Holidays closed</p>
+			</div>
+
+			<div class="side-widget-footer">
+				<p>* Calls are free.</p>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+  </div>
+</main>
+
+<footer>
+    <div class="contain">
+
+    <div class="footer-content">
+    <div class="f-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Damsons Future Planning Limited | <a href="//damsonsfutureplanning.co.uk/DFP_WW_Terms_Conditions.pdf" target="_blank">Terms and Conditions</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Privacy_2016.pdf" target="_blank">Privacy Policy</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Complaint_Handling_Procedure.pdf" target="_blank">Feedback</a> | <a href="//damsonsfutureplanning.co.uk/DFP_Cookie_Policy.pdf" target="_blank">Cookies</a> | <a href="//damsonsfutureplanning.co.uk/contact/" target="_blank">Contact Us</a></p>
+      <p><small>Damsons Future Planning Limited is registered in England and Wales with company registration number 07403561.<br>Its registered office is at Adamson House, Pomona Strand, Old Trafford M16 0TT ICO Reg. No. Z3173156 VAT Reg. No. 156668569</small></p>
+    </div>
+    <div class="footer-right">
+      <img src="//damsonsfutureplanning.co.uk/wp-content/uploads/2016/12/d-logo_white@2x.png" width="185">
+      <div class="footer-bottom contact">
+        <span class="number"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>  0800 088 4670</span>
+        <span class="email"><a href="mailto:info@damsonsfutureplanning.co.uk">info@damsonsfutureplanning.co.uk</a></span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</footer>
+
+<script src="dist/js/jquery.validate.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<script src="dist/js/main.min.js"></script>
+
+</body>
+</html>
